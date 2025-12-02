@@ -24,7 +24,7 @@ const [product, setProduct] = useState(null)
 
 <productContext.Provider value={{product,setProduct}}>
         <Routes>
-          <Route path='/' element={<Index />} />
+          <Route path='/*' element={<Index />} />
           <Route path='/product/:title' element={<Description />} />
         </Routes>
  </productContext.Provider>
